@@ -1,0 +1,98 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Center the card on screen */
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main weather card */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 25px;
+    width: 320px;
+    color: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Search box */
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.search button {
+    background: #00c6ff;
+    border: none;
+    padding: 10px;
+    margin-left: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 20px;
+}
+
+/* Weather icon */
+.weather-icon {
+    width: 100px;
+    margin: 15px auto;
+}
+
+/* Temperature & city name */
+.temp {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.city {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Details section */
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.col img {
+    width: 35px;
+}
+
+.humidity, .wind {
+    font-size: 18px;
+    font-weight: 500;
+}
